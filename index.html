@@ -16,6 +16,7 @@
     <!-- Header -->
     <header>
         <div class="logo">Hiwse</div>
+        <div class="menu">✨</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -32,18 +33,19 @@
     <main>
         <!-- Intro Section -->
         <section id="home" class="intro">
-            <div class="text">
-                <h1>Nirbhay Hiwse <span>👋</span></h1>
+            <div class="text animated">
+                <h1>Nirbhay Hiwse <span></span></h1>
                 <p class="title">Aspiring Software Engineer</p>
                 <p>I'm a B.Tech student in Computer Science with experience in web development, video editing, and
                     quantitative aptitude. Passionate about coding and technology.</p>
-                <button class="cta">Say Hello <i class="fa fa-paper-plane"></i></button>
+                <button class="cta" href="#contact" >Say Hello <i href="#contact" class="fa fa-paper-plane"></i></button>
             </div>
-            <div class="photo">
+            <div class="photo animated">
                 <img src="IMG20241004192336-removebg-preview.png" alt="Nirbhay Hiwse">
             </div>
             <p class="scroll">Scroll Down <i class="fa fa-arrow-down"></i></p>
         </section>
+
 
         <!-- About Section -->
         <section id="about" class="about">
@@ -65,223 +67,421 @@
             </div>
         </section>
 
+
         <!-- Skills Section -->
         <section id="skills" class="skills">
-        <div class="skills-section">
-            <h2 class="section-title">Skills</h2>
-            <p class="section-subtitle">My technical level</p>
-        
-        <div class="skills-container">
-            <!-- Frontend Skills -->
-            <div class="skill-card">
-                <h3 class="skill-category">Frontend Developer</h3>
-                <div class="skills-list">
-                    <div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-solid fa-html5"></i></span>
+            <div class="skills-section">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">My technical level</p>
+
+                <div class="skills-container">
+                    <!-- Frontend Skills -->
+                    <div class="skill-card">
+                        <h3 class="skill-category">Frontend Developer</h3>
+                        <div class="skills-list">
                             <div>
-                                <p class="skill-name">HTML</p>
-                                <p class="skill-level">Basic</p>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-solid fa-html5"></i></span>
+                                    <div>
+                                        <p class="skill-name">HTML</p>
+                                        <p class="skill-level">Basic</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+                                    <div>
+                                        <p class="skill-name">CSS</p>
+                                        <p class="skill-level">Advanced</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-js"></i></span>
+                                    <div>
+                                        <p class="skill-name">JavaScript</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span>
                             <div>
-                                <p class="skill-name">CSS</p>
-                                <p class="skill-level">Advanced</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-js"></i></span>
-                            <div>
-                                <p class="skill-name">JavaScript</p>
-                                <p class="skill-level">Intermediate</p>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-bootstrap"></i></span>
+                                    <div>
+                                        <p class="skill-name">Bootstrap</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span>
+                                    <div>
+                                        <p class="skill-name">Git</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-react"></i></span>
+                                    <div>
+                                        <p class="skill-name">React</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-bootstrap"></i></span>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-card">
+                        <h3 class="skill-category">Backend Developer</h3>
+                        <div class="skills-list">
                             <div>
-                                <p class="skill-name">Bootstrap</p>
-                                <p class="skill-level">Intermediate</p>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
+                                    <div>
+                                        <p class="skill-name">PHP</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-node-js"></i></span>
+                                    <div>
+                                        <p class="skill-name">Node.js</p>
+                                        <p class="skill-level">Basic</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-brands fa-python"></i></span>
+                                    <div>
+                                        <p class="skill-name">Python</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span>
                             <div>
-                                <p class="skill-name">Git</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-react"></i></span>
-                            <div>
-                                <p class="skill-name">React</p>
-                                <p class="skill-level">Intermediate</p>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
+                                    <div>
+                                        <p class="skill-name">MySQL</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-solid fa-fire"></i></span>
+                                    <div>
+                                        <p class="skill-name">Firebase</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
+                                    <div>
+                                        <p class="skill-name">SQL</p>
+                                        <p class="skill-level">Intermediate</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-            <!-- Backend Skills -->
-            <div class="skill-card">
-                <h3 class="skill-category">Backend Developer</h3>
-                <div class="skills-list">
-                    <div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
-                            <div>
-                                <p class="skill-name">PHP</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-node-js"></i></span>
-                            <div>
-                                <p class="skill-name">Node.js</p>
-                                <p class="skill-level">Basic</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-brands fa-python"></i></span>
-                            <div>
-                                <p class="skill-name">Python</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
-                            <div>
-                                <p class="skill-name">MySQL</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-solid fa-fire"></i></span>
-                            <div>
-                                <p class="skill-name">Firebase</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
-                            <div>
-                                <p class="skill-name">SQL</p>
-                                <p class="skill-level">Intermediate</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
-        </div>
+            </div>
         </section>
 
         <!-- Services Section -->
         <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Services</h2>
-        <p>What I Offer</p>
-        <div class="services-list">
-            <!-- Service Card Template -->
-            <div class="service" onclick="showPopup('webDevelopment')">
-                <i class="fa fa-laptop-code"></i>
-                <h3>Web Development</h3>
-                <p>Building responsive and interactive websites.</p>
-                <span class="view-more">View More →</span>
-            </div>
-    
-            <div class="service" onclick="showPopup('cyberSecurity')">
-                <i class="fa fa-shield-alt"></i>
-                <h3>Cybersecurity</h3>
-                <p>Implementing security measures for web applications.</p>
-                <span class="view-more">View More →</span>
-            </div>
-    
-            <div class="service" onclick="showPopup('videoEditing')">
-                <i class="fa fa-video"></i>
-                <h3>Video Editing</h3>
-                <p>Creating impactful video content and transitions.</p>
-                <span class="view-more">View More →</span>
-            </div>
-    
-            <div class="service" onclick="showPopup('uiUxDesign')">
-                <i class="fa fa-pencil-ruler"></i>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive and user-centered interfaces.</p>
-                <span class="view-more">View More →</span>
-            </div>
-    
-            <div class="service" onclick="showPopup('productDesign')">
-                <i class="fa fa-box"></i>
-                <h3>Product Design</h3>
-                <p>Crafting functional and aesthetically pleasing designs.</p>
-                <span class="view-more">View More →</span>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Pop-up Modal -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="hidePopup()">&times;</span>
-            <h3 id="popup-title"></h3>
-            <p id="popup-description"></p>
-            <ul id="popup-details"></ul>
-        </div>
-    </div>
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <p>What I Offer</p>
+            <div class="services-list">
+                <!-- Service Card Template -->
+                <div class="service" onclick="showPopup('webDevelopment')">
+                    <i class="fa fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and interactive websites.</p>
+                    <span class="view-more">View More →</span>
+                </div>
 
+                <div class="service" onclick="showPopup('cyberSecurity')">
+                    <i class="fa fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Implementing security measures for web applications.</p>
+                    <span class="view-more">View More →</span>
+                </div>
 
+                <div class="service" onclick="showPopup('videoEditing')">
+                    <i class="fa fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Creating impactful video content and transitions.</p>
+                    <span class="view-more">View More →</span>
+                </div>
 
-    <!-- Qualification Section -->
-    <section id="qualification" class="qualification">
-        <h2>Qualification</h2>
-        <div class="timeline">
-            <div class="timeline-item education">
-                <h3>Education</h3>
-                <div class="timeline-content">
-                    <span class="icon">&#x1F393;</span> <!-- Graduation cap icon -->
-                    <p>Sage University - B.Tech in Computer Science (Expected 2025)</p>
+                <div class="service" onclick="showPopup('uiUxDesign')">
+                    <i class="fa fa-pencil-ruler"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and user-centered interfaces.</p>
+                    <span class="view-more">View More →</span>
+                </div>
+
+                <div class="service" onclick="showPopup('productDesign')">
+                    <i class="fa fa-box"></i>
+                    <h3>Product Design</h3>
+                    <p>Crafting functional and aesthetically pleasing designs.</p>
+                    <span class="view-more">View More →</span>
                 </div>
             </div>
-            <div class="timeline-item experience">
-                <h3>Experience</h3>
-                <div class="timeline-content">
-                    <span class="icon">&#x1F4C8;</span> <!-- Chart icon -->
-                    <p>Frontend and backend developer with practical project work in web development and cybersecurity.</p>
-                </div>
+        </section>
+
+        <!-- Pop-up Modal -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="hidePopup()">&times;</span>
+                <h3 id="popup-title"></h3>
+                <p id="popup-description"></p>
+                <ul id="popup-details"></ul>
             </div>
         </div>
-    </section>
+
+
+
+        <!-- Qualification Section -->
+        <!-- <section id="qualification" class="qualification">
+            <h2>Qualification</h2>
+            <div class="timeline">
+                <div class="timeline-item education">
+                    <h3>Education</h3>
+                    <div class="timeline-content">
+                        <span class="icon">&#x1F393;</span>  Graduation cap icon -->
+        <!-- <p>Sage University - B.Tech in Computer Science (Expected 2025)</p>
+                    </div>
+                </div>
+                <div class="timeline-item experience">
+                    <h3>Experience</h3>
+                    <div class="timeline-content">
+                        <span class="icon">&#x1F4C8;</span> Chart icon -->
+        <!-- <p>Frontend and backend developer with practical project work in web development and
+                            cybersecurity.</p> -->
+        <!-- </div>
+                </div>
+            </div>
+        </section> -->
 
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-items">
-                <div class="item">Passman Project (Password Manager)</div>
-                <div class="item">CyBolg (Cybersecurity Blog)</div>
-                <div class="item">Library Website for Organization</div>
-                <div class="item">Dubmaster (Video Dubbing Software)</div>
-            </div>
+            <div id="project">
+                <section id="product1" class="section-p1">
+                    <h2><span></span>Project Section</h2>
+                    <div class="pro-contaner">
+                        <div class="pro">
+                            <img src="Images/Screenshot 2024-10-13 124006.png" alt="">
+                            <div class="des">
+                                <h5>Sinha Library</h5>
+                                <span>I developed the 'Sinha Library' website, focusing on modern design and user
+                                    experience. The project involved creating a mobile-responsive interface, enhancing
+                                    CSS
+                                    for a visually appealing look.</span><br>
+                                <span>Integrating features</span><br>
+                                <span>-5 page Website</span><br>
+                                <span>-Registration Form</span><br>
+                                <span>-Bill Form</span><br>
+                                <span>-Expense Manage</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Paid Website:$43</h4>
+                                <a href="https://sinhalibrarydhanbad.vercel.app/">Check Website <i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="Images/Screenshot 2024-10-13 125617.png" alt="">
+                            <div class="des">
+                                <h5>Seat-wise (<strong>" Own Startup"</strong>)</h5>
+                                <span>The Seat-Wise project is a student arrangement system for exam websites, allowing
+                                    efficient seating by grouping students based on enrollment numbers. It includes a
+                                    responsive
+                                    design with mobile-friendly features and lets users choose the number of students
+                                    per page
+                                    in the generated PDFs.</span><br>
+                                <span>Integrating features</span><br>
+                                <span>-User can Merge 3 or more excle file</span><br>
+                                <span>-User Upload the Merge file in the (Seat Allocation) </span><br>
+                                <span>-It can atomatically generate Pdf for all students for class.</span><br>
+                                <span>-Ease to make Setting Arragement in the exam Center</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Startup Project , Use As SAGE University, Bhopal</h4>
+                                <a href="https://seat-wise.vercel.app/">Check Website <i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+
+
+                        <div class="pro">
+                            <img src="Images/Mental Health.png" alt="">
+                            <div class="des">
+                                <h5>Mental Health Website</h5>
+                                <span>Mind Easse" is a student-centered platform designed to monitor and reduce stress
+                                    levels. It provides tools, resources, and personalized support to help students
+                                    manage
+                                    their mental well-being, enhancing both their academic performance and overall
+                                    happiness.</span><br>
+                                <span>--As the team leader, I'm guiding and coordinating efforts to ensure our project's
+                                    success, fostering collaboration and driving our goals forward.</span><br>
+                                <span>-Problem of Sisttech Hackthon</span>
+                                <span>Use API like: Gemini api, and two Api to solve problem</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Hosted on GitHub Pages (My team Member Github Page):</h4>
+                                <a href="https://nir-bhay.github.io/mind-run/">Check Website <i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="pro">
+                            <img src="Images/image.png" alt="">
+                            <div class="des">
+                                <h5>Passman</h5>
+                                <span>Passman is a secure password manager that allows users to safely store and manage
+                                    their passwords. The
+                                    project focuses on encryption techniques to ensure data security and provides a
+                                    user-friendly interface for
+                                    easy access and management.</span><br>
+                                <span>- Team Project</span><br>
+                                <span>- Built using HTML, CSS, JavaScript, and Backend</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Under Development</h4>
+                                <a href="https://nir-bhay.github.io/PassMan-Your-password-guide-/"><i
+                                        class="ri-lock-line"></i>Check Website</a>
+                            </div>
+                        </div>
+
+                        <div class="pro">
+                            <img src="Images/Screenshot 2024-10-13 130131.png" alt="">
+                            <div class="des">
+                                <h5>Dubmaster</h5>
+                                <span>Dubmaster is a video dubbing software that enables users to add audio tracks to
+                                    videos seamlessly. This
+                                    project showcases my skills in frontend development using JavaScript and my ability
+                                    to create a smooth user
+                                    experience.</span><br>
+                                <span>- Completed for a national-level competition</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>SIH Porject..</h4>
+                                <a
+                                    href="https://nir-bhay.github.io/DubMaster-AI-Your-Ultimate-Hub-for-Seamless-AI-Dubbing-Excellence/"><i
+                                        class="ri-video-line"></i>Check Website</a>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="Images/intro.png" alt="">
+                            <div class="des">
+                                <h5>My Portfolio</h5>
+                                <span>This is my personal portfolio website, showcasing all my projects and skills in
+                                    web development,
+                                    programming, and more. It's designed to reflect my personality and
+                                    professionalism.</span><br>
+                                <span>- Designed using HTML, CSS, and JavaScript</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Live Portfolio</h4>
+                                <a href="your-portfolio-link-here" class="live-demo"><i class="ri-play-line"></i> Live
+                                    Demo</a>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="Images/Ecommerce website.png" alt="">
+                            <div class="des">
+                                <h5>Ecommerce Website</h5>
+                                <span>This eCommerce website is designed to provide a seamless shopping experience,
+                                    showcasing a range of products with intuitive navigation.asy navigation with a focus
+                                    on
+                                    user experience, making it simple for customers to browse and purchase
+                                    products.</span><br>
+                                <span>-Under Devloplment</span><br>
+                                <span>-Front-end ready </span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Own project:$0</h4>
+                            </div>
+                            <a href="#"><i class="ri-shopping-cart-line " id="cart"></i></a>
+                        </div>
+                        <div class="pro">
+                            <img src="Images/Rejouice Webiste.png" alt="">
+                            <div class="des">
+                                <h5>Rejouice Webiste Colone</h5>
+                                <span>As part of my portfolio, I am developing a clone of the Rejouice website, focusing
+                                    on
+                                    recreating its dynamic and visually stunning homepage. This project is rich in
+                                    animations and incorporates high-quality videos to engage users, reflecting my
+                                    expertise
+                                    in creating interactive and immersive web experiences. By replicating the original
+                                    design, I demonstrate my ability to handle complex front-end development tasks,
+                                    ensuring
+                                    smooth animations and responsive design across all devices.</span>
+                                <div class="star">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h4>Hosted on GitHub Pages</h4>
+                                <a href="https://dipukumardev.github.io/Rejouice_websit_colone/">Check Website <i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
         </section>
+
+
+
 
         <!-- Testimonials Section -->
         <section class="testimonials">
-            <h2>My Clients Say</h2>
+            <h2>Inspiring Quotes</h2>
             <div class="testimonial">
-                <p>"Nirbhay's work on Passman was exceptional, with impressive design and functionality."</p>
-                <p>- Client A</p>
+                <p>"Any fool can write code that a computer can understand. Good programmers write code that humans can
+                    understand."</p>
+                <p>- Martin Fowler</p>
             </div>
             <div class="testimonial">
-                <p>"Professional and dedicated, with great teamwork and technical skills."</p>
-                <p>- Client B</p>
+                <p>"First, solve the problem. Then, write the code."</p>
+                <p>- John Johnson</p>
+            </div>
+            <div class="testimonial">
+                <p>"Experience is the name everyone gives to their mistakes."</p>
+                <p>- Oscar Wilde</p>
             </div>
         </section>
 
@@ -317,7 +517,8 @@
         <p>© 2024 Nirbhay Hiwse. All rights reserved.</p>
     </footer>
 
-   
+
 </body>
 <script src="script.js"></script>
+
 </html>

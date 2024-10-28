@@ -44,3 +44,41 @@ function hidePopup() {
     const popup = document.getElementById('popup');
     popup.classList.remove('show');
 }
+
+
+// Add this script at the bottom of your HTML file
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutContent = document.querySelector('.about-content');
+
+    // Function to handle scrolling animation
+    function handleScroll() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        if (scrollPosition > aboutContent.offsetTop) {
+            aboutContent.classList.add('animated');
+        }
+    }
+
+    // Check scroll position on page load and on scroll
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+});
+
+
+// Add this script at the bottom of your HTML file
+document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('.animated');
+
+    function checkVisibility() {
+        elements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= windowHeight) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+});

@@ -43,7 +43,7 @@ header ul li a {
 
 /* Main Section */
 main {
-    padding: 60px 80px;
+    padding: 40px 60px;
 }
 
 /* Intro Section */
@@ -52,6 +52,13 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 80px 0;
+    background-color: #ffffff00;
+    /* Update for black and white theme */
+    color: #000000;
+    /* Update for black and white theme */
+    overflow: hidden;
+    /* Ensure animations are smooth */
+    width: 80vw;
 }
 
 .intro .text {
@@ -62,6 +69,10 @@ main {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    color: #000000;
+    /* Update for black and white theme */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Animation properties */
 }
 
 .intro h1 span {
@@ -70,44 +81,109 @@ main {
 
 .intro .title {
     font-size: 24px;
-    color: #666;
+    color: #7a7a7a;
     margin: 10px 0;
 }
 
 .intro p {
     font-size: 18px;
-    color: #555;
+    color: #acabab;
     margin-bottom: 20px;
 }
 
 .intro .cta {
     padding: 12px 24px;
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    /* Update for black and white theme */
+    color: #ffffff;
+    /* Update for black and white theme */
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
+    /* Animation properties */
 }
 
 .intro .cta:hover {
-    background-color: #555;
+    background-color: #fefefe;
+    color: #000000;
+    transform: translateY(-3px);
+    /* Animation effect */
 }
 
 .photo img {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Animation properties */
 }
 
 .scroll {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    color: #888;
+    color: #0b0b0b;
+    animation: bounce 2s infinite;
+    /* Bounce effect */
 }
 
+/* Keyframes for bounce effect */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Add scroll animation */
+.animated {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro .text,
+    .intro .photo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro h1 span {
+        font-size: 28px;
+    }
+}
+
+/* About Section */
 /* About Section */
 .about {
     margin-top: 100px;
@@ -118,6 +194,8 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
+    color: #000000;
+    /* Update for black and white theme */
 }
 
 .about-content {
@@ -125,35 +203,54 @@ main {
     align-items: center;
     gap: 40px;
     justify-content: center;
+    opacity: 0;
+    /* Initial state for animation */
+    transform: translateY(50px);
+    /* Initial state for animation */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Animation properties */
 }
 
 .about img {
     width: 200px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 .details {
     max-width: 600px;
+    color: #ffffff;
+    /* Update for black and white theme */
 }
 
 .details p {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #666;
+    color: #838080;
+    /* Update for black and white theme */
 }
 
 .stats {
     display: flex;
     gap: 30px;
-    font-size: 18px;
-    color: #333;
+    font-size: 16px;
+    color: #000000;
+    /* Update for black and white theme */
     font-weight: 500;
+}
+
+.stats div {
+    padding: 4px;
+    border: 2px solid #000000;
+    /* Update for black and white theme */
+    border-radius: 10px;
 }
 
 .download {
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    /* Update for black and white theme */
+    color: #ffffff;
+    /* Update for black and white theme */
     border-radius: 5px;
     font-size: 16px;
     border: none;
@@ -163,7 +260,32 @@ main {
 }
 
 .download:hover {
-    background-color: #555;
+    background-color: #888888;
+    /* Update for black and white theme */
+}
+
+/* Add scroll animation */
+.animated {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
 }
 
 /* Skills Section */
@@ -575,21 +697,6 @@ header nav ul li a {
         margin-bottom: 10px;
     }
 }
-
-/* About Section Responsiveness */
-.about-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.about-content img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-}
-
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -639,6 +746,7 @@ header nav ul li a {
     
 }
 
+
 /* Portfolio Section Responsiveness */
 .portfolio-items {
     display: grid;
@@ -651,18 +759,249 @@ header nav ul li a {
     padding: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCT SECTION */
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-contaner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro h5 {
+    padding-top: 7px;
+    columns: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro #cart {
+    word-wrap: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 30px;
+}
+
+
+.des a {
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 5px;
+    color: #000000;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.des a i {
+    margin-left: 3px;
+}
+
+.des a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #product1 .pro {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    #product1 .pro {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #product1 .pro-contaner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #product1 .pro {
+        width: 80%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #product1 .pro {
+        position: relative;
+       
+        right: 70px;
+        width: 180%;
+        padding: 10px;
+        margin-left: 0px 0px ;     
+        
+        /* Increase padding for better spacing */
+    }
+}
+
+
+
+
+
+
+
+
 /* Contact Section Responsiveness */
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
-.contact-info .talk-to-me,
+.talk-to-me,
 .contact-form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
     flex: 1 1 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.talk-to-me:hover,
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.talk-to-me h3,
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.talk-to-me p,
+.contact-form input,
+.contact-form textarea {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #050505;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+    padding: 10px 20px;
+    /* border: none; */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+        color: #ffffff;
+        border: 1px solid rgb(255, 255, 255);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
 @media (min-width: 768px) {
 
     .contact-info .talk-to-me,
@@ -670,6 +1009,32 @@ header nav ul li a {
         flex: 1 1 48%;
     }
 }
+
+@media (max-width: 768px) {
+
+    .contact-info .talk-to-me,
+    .contact-form {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .talk-to-me h3,
+    .contact-form h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 /* Footer Responsiveness */
 .footer-links {
@@ -691,8 +1056,8 @@ header nav ul li a {
     .intro,
     .about-content,
     .skills .skill-set,
-    .services-list,
-    .portfolio-items {
+    .services-list
+    {
         gap: 40px;
     }
 }
