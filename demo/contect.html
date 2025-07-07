@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact us for inquiries, support, or project proposals. Our team is here to help with all your real estate and construction needs.">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Contact Us</h1>
+        <p>We're here to assist with any inquiries or questions.</p>
+    </header>
+
+    <div class="container">
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" novalidate>
+                <label for="name">Name</label>
+
+
+                <input type="text" id="name" name="name" required>
+                <small class="error" id="nameError"></small>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error" id="emailError"></small>
+
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+                <small class="form-success" id="formSuccess"></small>
+            </form>
+        </section>
+
+        <aside class="contact-details">
+            <h2>Our Office</h2>
+            <div class="details">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Construction Ave, Suite 100, Cityville</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@realestatecorp.com</p>
+            </div>
+
+            <div class="social-media">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Real Estate Corp. All rights reserved.</p>
+    </footer>
+
+    <script src="contect.js"></script>
+</body>
+
+</html>

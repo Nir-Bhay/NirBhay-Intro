@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Careers at [Company Name] - Join our real estate team and grow your career!">
+    <title>Careers - [Company Name]</title>
+    <link rel="stylesheet" href="carrer.css">
+    <script defer src="carrer.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Careers at Sood Infra</h1>
+        <p>Join our dedicated team and make an impact in the real estate industry</p>
+    </header>
+
+    <!-- Job Listings Section -->
+    <section id="job-listings">
+        <h2>Current Job Openings</h2>
+        <div id="filters"> <label for="location-filter">Location:</label> <select id="location-filter">
+                <option value="all">All Locations</option>
+                <option value="chhindwara">Chhindwara</option>
+                <option value="remote">Remote</option> <!-- Add more options as needed -->
+            </select> <label for="type-filter">Job Type:</label> <select id="type-filter">
+                <option value="all">All Types</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="contract">Contract</option>
+            </select> </div>
+        <div id="jobs-container"> <!-- Job listing for Real Estate Sales Consultant -->
+            <div class="job">
+                <h3>Real Estate Sales Consultant</h3>
+                <p><strong>Location:</strong> Chhindwara</p>
+                <p><strong>Type:</strong> Full-Time</p>
+                <p><strong>Deadline:</strong> December 31, 2024</p> <a href="#" class="read-more">Read More</a>
+            </div> <!-- Job listing for Home Designer -->
+            <div class="job">
+                <h3>Home Designer</h3>
+                <p><strong>Location:</strong> Chhindwara</p>
+                <p><strong>Type:</strong> Full-Time</p>
+                <p><strong>Deadline:</strong> January 15, 2025</p> <a href="#" class="read-more">Read More</a>
+            </div> <!-- Job listing for 3D Map Rendering Specialist -->
+            <div class="job">
+                <h3>3D Map Rendering Specialist</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Type:</strong> Contract</p>
+                <p><strong>Deadline:</strong> February 28, 2025</p> <a href="#" class="read-more">Read More</a>
+            </div> <!-- Add more jobs as needed -->
+        </div>
+    </section>
+
+<!-- Company Culture Section -->
+<section id="company-culture">
+    <h2>Why Join Sood Infra</h2>
+    <div id="culture-content">
+        <div id="values">
+            <h3>Our Values</h3>
+            <ul>
+                <li>Customer Focus</li>
+                <li>Integrity</li>
+                <li>Innovation</li>
+            </ul>
+        </div>
+        <div id="benefits">
+            <h3>Benefits & Perks</h3>
+            <ul>
+                <li>Flexible Work Hours</li>
+                <li>Health & Wellness Programs</li>
+                <li>Professional Development</li>
+            </ul>
+        </div>
+        <div id="video">
+            <h3>A Day at Sood Infra</h3> <video controls>
+                <source src="sood_infra_video.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="testimonials">
+            <h3>Employee Testimonials</h3>
+            <blockquote>
+                <p>"Working here has been a transformative experience! I've grown both personally and professionally."
+                </p> <cite>- Alex, Sales Manager</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The team culture is amazing! I feel valued and supported in every project."</p> <cite>- Jamie,
+                    Marketing Specialist</cite>
+            </blockquote> <!-- Add more testimonials as needed -->
+        </div>
+    </div>
+</section>
+
+    <!-- Application Form Section -->
+    <section id="application-form">
+        <h2>Apply Now</h2>
+    <form id="apply-form" action="https://formspree.io/f/mjkvwwpo" method="POST">
+     
+            
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" required> 
+            <label for="email">Email:</label> <input type="email" id="email" name="email" required> 
+                <label for="phone">Phone:</label> <input type="tel" id="phone" name="phone">
+                 <label for="position">Position Applying For:</label> 
+                 <select id="position" name="position">
+                <option value="sales-consultant">Real Estate Sales Consultant</option>
+                <option value="home-designer">Home Designer</option>
+                <option value="3d-rendering">3D Map Rendering Specialist</option>
+                <!-- Add other job titles dynamically or statically here -->
+            </select> 
+            <label for="resume">Upload Resume (PDF or DOC):</label> 
+            <input type="file" id="resume"  name="resume" accept=".pdf, .doc" >
+             <label for="message">Cover Letter:</label>
+              <textarea id="message" name="message" placeholder="Tell us why you'd be a great fit..."></textarea> 
+                <button   type="submit">Submit Application</button> 
+            </form>
+    </section>
+
+<!-- Footer Section -->
+<footer>
+    <p>Connect with us:</p>
+    <div id="social-media"> <a href="#" target="_blank">LinkedIn</a> <a href="#" target="_blank">Instagram</a> <a
+            href="#" target="_blank">Facebook</a> <a href="#" target="_blank">Twitter</a>
+        <!-- Add other social media links here --> </div>
+    <p>&copy; 2024 Sood Infra. All rights reserved.</p>
+</footer>
+
+
+<!-- Back to Top Button --> <button id="back-to-top"><img src="up_arrow.png" alt="Up"></button>
+<!-- Side Social Media Bar -->
+<div id="social-bar"> <a href="#" target="_blank">LinkedIn</a> <a href="#" target="_blank">Instagram</a> <a href="#"
+        target="_blank">Facebook</a> <a href="#" target="_blank">Twitter</a> <!-- Add other social media links here -->
+</div>
+
+</body>
+
+</html>
